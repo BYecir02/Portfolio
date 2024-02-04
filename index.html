@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codey | Badirou Yecir</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="moi.png">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <img src="moi-dark.png" alt="Logo de votre site">
+            <a href="#accueil" class="nav-link">Home</a>
+            <a href="#Presentation" class="nav-link">Presentation</a>
+            <a href="#Competences" class="nav-link">Competences</a>
+            <a href="#Projet" class="nav-link">Projet</a>
+            <a href="#Contact" class="nav-link">Contact</a>  
+        </nav>
+    </header>
+
+    <section id="accueil">
+        <div class="Hello">
+            <h3 style="font-size: 30px; font-family: font-family: sans-serif;"> CODEY | BMY </h3>
+            <div class="titre">
+                <h1 style="font-size: 80px;"> Développeur <span style="color: rgb(83, 82, 82);">+</span> </h1>
+            </div>
+            <span id="texte"> Etudiant </span>
+                <div class="area" >
+                    <ul class="circles">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                    </ul>
+                </div >  
+        </div>
+        
+    </section>
+
+    <section id="Presentation">
+        <div class="Presentation-column">
+            <h1>Hello !</h1>
+            <p> Je suis Badirou Yecir, travailleur passionné et propriétaire de Codey. Je poursuis mes études d'informatique a JUNIA ISEN, à Lille. J'ai eu l'opportunuité de travailler sur divers projets qui ont enrichi mon expérience et ma vision du metier. Je recherche constamment de nouvelles occasions pour enrichir mes savoirs et aptitudes. Je souhaite que mon portfolio vous offre un regard sur mon expérience professionnelle et mes compétences. Je suis à votre disposition pour toute question ou pour plus d'informations à mon sujet.</p>         
+            <a href="#Contact" id="smoothScrollButton" style="text-decoration: none;"><div class="triangle-button"> Me contacter </div></a>
+        </div>
+        <div class="Presentation-column">
+            <img src="work.png" alt="Moi">
+        </div>
+    </section>
+
+    <section id="Competences">
+        <div id="SkillBox">
+            <span class="intitule">MES COMPÉTENCES</span> <br>
+            <p class="module-line-competences"></p>
+            <div class="SkillBar" id="Skill-HTML">
+                <span class="Skill-Area">HTML</span>
+                <div class="ProgressBar"><div class="Progress"></div></div>
+                <span class="PercentText">100%</span>
+            </div>
+            <div class="SkillBar" id="Skill-CSS">
+                <span class="Skill-Area">CSS</span>
+                <div class="ProgressBar"><div class="Progress"></div></div>
+                <span class="PercentText">70%</span>
+            </div>
+            <div class="SkillBar" id="Skill-JS">
+                <span class="Skill-Area">Javascript</span>
+                <div class="ProgressBar"><div class="Progress"></div></div>
+                <span class="PercentText">50%</span>
+            </div>
+            <div class="SkillBar" id="Skill-C">
+                <span class="Skill-Area">C</span>
+                <div class="ProgressBar"><div class="Progress"></div></div>
+                <span class="PercentText">10%</span>
+            </div>
+        </div>
+    </section>
+    <script src="index.js" defer></script>
+
+    <section id="Projet">
+        <div class="realisation">MES RÉALISATIONS</div> <br>
+        <p class="module-line-projet"></p>
+        <div class="list-projet">
+            <div class="projet-column">
+                <div class="projet-detail">
+                    <h1> 01 </h1>
+                    <img src="moi-dark.png" alt="Projet1">
+                    <p> Présentation </p>
+                    <a href="#accueil" class="nav-link"><button class="visite-btn">Visiter</button></a>
+                </div>
+            </div>
+            <div class="projet-column">
+                <div class="projet-detail">
+                    <h1> 02</h1>
+                    <img src="moi-dark.png" alt="Projet2">
+                    <p> Détail </p>
+                    <button class="visite-btn">Visiter</button>
+                </div>
+            </div>
+            <div class="projet-column">
+                <div class="projet-detail">
+                    <h1> 03</h1>
+                    <img src="moi-dark.png" alt="Projet3">
+                    <p> Détail </p>
+                    <button class="visite-btn">Visiter</button>
+                </div>
+            </div>
+            <div class="projet-column">
+                <div class="projet-detail">
+                    <h1> 04</h1>
+                    <img src="moi-dark.png" alt="Projet4">
+                    <p> Détail </p>
+                    <button class="visite-btn">Visiter</button>
+                </div>
+            </div>
+            <div class="projet-column">
+                <div class="projet-detail">
+                    <h1> 05</h1>
+                    <img src="moi-dark.png" alt="Projet5">
+                    <p> Détail </p>
+                    <button class="visite-btn">Visiter</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Contact">
+        <div class="Contact-column">
+            <button class="arrow-button">
+                Ensemble démarrons <span>&rarr;</span>
+            </button>
+            <img src="work2.png" alt="Moi">
+        </div>
+        <div class="Contact-column">   
+            <form action="/submit_contact_form" method="post">
+                <label for="name"> </label><br>
+                <input type="text" id="name" name="name" required class="form-input" placeholder="Nom et prénoms"><br>                            
+                <label for="email"> </label> <br>
+                <input type="email" id="email" name="email" required class="form-input" placeholder="Adresse e-mail"><br>
+                <label for="message"> </label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required class="message-input" placeholder="Votre message" style="font-family: Noto Sans, sans-serif;"></textarea><br>
+                <input type="submit" value="Envoyer" class="send" style="cursor: pointer; background-color: green; color: white;">
+            </form>    
+        </div>
+    </section>
+
+    <footer>
+        <ul class="social-icon">
+            <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/in/mohamed-yecir-badirou-4b46a2299?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/niyi_badir?igsh=d3VoejA3NW00bXpt&utm_source=qr">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="https://github.com/BYecir02">
+                <ion-icon name="logo-github"></ion-icon>
+              </a></li>
+        </ul>
+        <p style="text-align: center;"> &copy; 2024 Yecir BADIROU | Tous droits réservés.</p>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        
+</body>
+</html>

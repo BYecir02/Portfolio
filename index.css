@@ -1,0 +1,416 @@
+@keyframes apparition {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+
+.area{   
+    width: 100%;
+    height:100vh;
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+body{
+    scroll-behavior: smooth;
+    background-color: rgb(17, 17, 17);
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+#navbar img {
+    width: 30px; /* Ajustez la taille de votre logo selon vos besoins */
+    margin-right: 10px; /* Ajoutez de la marge à droite du logo pour l'éloigner des liens de navigation */
+}
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: Noto Sans, sans-serif;
+}
+section {
+    min-height: 100vh;
+    display: flex;
+}
+#accueil{
+    height: 100vh;
+    display: flex;
+    font-family: Noto Sans, sans-serif;
+}
+.Hello{
+    margin-top: 7%;
+    margin-left: 200px;
+    color: white;
+}
+.titre{
+    padding-left: 15px;
+    border-bottom: 3px solid green;
+    border-left: 3px solid white;
+}
+#texte{
+    color: green;
+    margin-left: 450px;
+    font-size: 40px;
+}
+#Presentation{
+    height: 100vh;
+    display: flex;
+    font-family: Noto Sans, sans-serif;
+}
+.Presentation-column{
+    display:inline-block;
+    margin-top: 15px;
+    margin-right: 30px;
+    margin-left: 35px;
+    color: white;
+    font-size: 23px;
+}
+.Presentation-column img{
+    height: 450px;
+    width: auto;
+}
+.triangle-button {
+    border: 1px solid green; /* Ajustez la couleur et la taille comme nécessaire */
+    border-radius: 10px;
+    width: 150px;
+    cursor: pointer; /* Change le curseur en main pour indiquer qu'il s'agit d'un bouton */
+    padding: 5px;
+    color: white;
+    background-color: green;
+}
+#Competences {
+    height: 100vh;
+    display: flex;
+    font-family: Noto Sans, sans-serif;
+}
+.module-line-competences{
+    width: 30%; /* ou la largeur désirée */
+    margin: 0 auto; /* Centrage horizontal */
+    height: 2px; /* ou la hauteur désirée pour la ligne */
+    background-color: green; /* ou la couleur désirée pour la ligne */
+    margin-bottom: 10px;
+}
+#SkillBox {
+    width: 80%;
+    margin: auto;
+}
+.intitule{
+    color: white;
+    display: block; /* ou 'inline-block' si vous préférez */
+    text-align: center;
+    width: 100%; 
+    font-size: 30px;
+}
+.SkillBar {
+    margin: 20px 0;
+}
+.Skill-Area{
+    color: white;
+}
+.ProgressBar {
+    width: 100%;
+    background-color: #ddd;
+    height: 20px;
+}
+
+.Progress {
+    height: 20px;
+    background-color: #4CAF50;
+    width: 0%;
+}
+
+.PercentText {
+    margin-left: 5px;
+    color: white;
+}
+
+#Projet{
+    font-family: Noto Sans, sans-serif;
+    display: flex;
+    flex-direction: column; /* Empile les éléments les uns au-dessus des autres */
+    justify-content: center; /* Aligne horizontalement le contenu au centre */
+    align-items: center; /* Aligne verticalement le contenu au centre */
+    height: 100vh;
+}
+.module-line-projet{
+    width: 10%; /* ou la largeur désirée */
+    margin: 0 auto; /* Centrage horizontal */
+    height: 2px; /* ou la hauteur désirée pour la ligne */
+    background-color: green; /* ou la couleur désirée pour la ligne */
+    margin-bottom: 10px;
+}
+.realisation{
+    color: white;
+    font-size: 30px;
+}
+
+.list-projet{
+    height: 64vh;
+    display: flex;
+    margin-top: 100px;
+    overflow-x: auto;
+    width: 87%;
+}
+.list-projet::-webkit-scrollbar {
+    display: none; /* Cela cache la barre de défilement sur WebKit/Blink */
+}
+.projet-column{
+    display:inline-block;
+    border: 1px solid green;
+    border-radius: 2px;
+    margin-left: 10px;
+    padding: 3px;
+    text-align: center;
+    color: white;
+    width: 240px;
+    flex: 0 0 auto; /* Ne pas étirer les colonnes */
+}
+.projet-detail img{
+    height: 130px;
+    width: auto;
+}
+.visite-btn {
+    background-color: rgb(13, 61, 13);
+    border: none;
+    color: white;
+    padding: 10px 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+#Contact{
+    height: 40vh;
+    display: flex;
+    margin-bottom: 0px;
+    font-family: Noto Sans, sans-serif;
+}
+.Contact-column{
+    display: inline-block;
+    margin-left: 100px;
+    margin-top: 110px;
+    color: white;
+}
+/* Style de base pour le bouton */
+.arrow-button {
+    background-color: #007bff; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte */
+    padding: 10px 20px; /* Espacement interne du bouton */
+    border: none; /* Suppression de la bordure */
+    cursor: pointer; /* Curseur de type pointeur au survol */
+    font-size: 16px; /* Taille de police */
+    border-radius: 5px; /* Coins arrondis */
+    display: inline-block; /* Afficher en tant que bloc en ligne */
+    text-align: center; /* Centrer le texte horizontalement */
+
+
+  }
+  
+  /* Style pour la flèche à droite */
+  .arrow-button span {
+    margin-left: 10px; /* Espace entre le texte et la flèche */
+  }
+  
+.Contact-column img {
+    width: 70%;   /* Largeur relative à l'élément conteneur */
+    height: auto; /* Hauteur ajustée automatiquement pour conserver le ratio */
+}
+.Contact-column form{
+    width: auto;
+    padding-top: 60px;
+    padding-bottom: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid green;
+    margin-right: 60px;
+    border-radius: 7px;
+    text-align: center;
+}
+form input{
+    width: 90%;
+    height: 25px;
+}
+form textarea{
+    width: 90%;
+    height: 80px;
+    margin: 10px;
+}
+footer{
+    height: 20vh;
+    padding-top: 20px;
+    color: white;
+    font-family: Noto Sans, sans-serif;
+} 
+  .social-icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  .social-icon__item,
+  .menu__item {
+    list-style: none;
+  }
+  
+  .social-icon__link {
+    font-size: 2rem;
+    color: green;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  .social-icon__link:hover {
+    transform: translateY(-10px);
+  }
+  
+  .menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+  
+  .menu__link:hover {
+    opacity: 1;
+  }
+  
+
+  
