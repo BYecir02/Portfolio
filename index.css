@@ -189,7 +189,7 @@ section {
     font-family: sans-serif;
 }
 .Hello{
-    margin-top: 50px;
+    margin-top: 120px;
     margin-left: 120px;
     color: black;
     font-size: 23px;
@@ -379,6 +379,13 @@ footer{
     section {
         min-height: 70vh;
         display: flex;
+    }
+    .hamburger-menu {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-right: 66px;
     }
     .Hello{
         margin-left: 20px;
