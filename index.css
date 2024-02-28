@@ -282,11 +282,9 @@ section {
     padding-bottom: 70px;
     padding-left: 30px;
     padding-right: 30px;
-    border: 1px solid green;
     margin-right: 60px;
     border-radius: 7px;
     text-align: center;
-    box-shadow: 0 0 30px black;
 }
 form input{
     width: 90%;
