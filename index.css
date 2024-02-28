@@ -385,7 +385,7 @@ footer{
         display: flex;
         flex-direction: column;
         gap: 5px;
-        margin-right: 66px;
+        margin-right: 45px;
     }
     .Hello{
         margin-left: 20px;
