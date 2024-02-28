@@ -192,6 +192,7 @@ section {
     height: 100vh;
     display: flex;
     font-family: Noto Sans, sans-serif;
+    background-color: rgb(244, 237, 237);
 }
 .Presentation-column{
     display:inline-block;
@@ -202,7 +203,8 @@ section {
     font-size: 23px;
 }
 .Presentation-column img{
-    height: 450px;
+    margin-top: 30px;
+    height: 500px;
     width: auto;
 }
 .triangle-button {
@@ -268,7 +270,7 @@ section {
     font-family: Noto Sans, sans-serif;
     width: 100%;
     justify-content: center;
-    background-color: rgb(236, 211, 211);
+    background-color: rgb(244, 237, 237);
 }
 .Contact-column{
     display: inline-block;
