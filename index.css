@@ -358,7 +358,7 @@ footer{
         margin-left: 20px;
     }
     .un{
-        margin-top: 270px;
+        margin-top: 240px;
         margin-left: 11px;
     }
     .codey{
@@ -379,6 +379,7 @@ footer{
         height: auto;
         width: auto;
         justify-content: center;
+        background-color: rgb(244, 237, 237);
     }
     .Presentation-column{
         display:inline-block;
@@ -395,10 +396,45 @@ footer{
     }
     #Competences{
         height: auto;
-        justify-content: center;
     }
     #SkillBox{
-        margin-top: 200px;
+        margin-top: 100px;
+    }
+    .module-line-competences{
+        width: 30%; /* ou la largeur désirée */
+        margin: 0 auto; /* Centrage horizontal */
+        height: 2px; /* ou la hauteur désirée pour la ligne */
+        background-color: green; /* ou la couleur désirée pour la ligne */
+        margin-bottom: 10px;
+    }
+    .intitule{
+        color: black;
+        display: block; /* ou 'inline-block' si vous préférez */
+        text-align: center;
+        width: 100%; 
+        font-size: 30px;
+    }
+    .SkillBar {
+        margin: 20px 0;
+    }
+    .Skill-Area{
+        color: black;
+    }
+    .ProgressBar {
+        width: 100%;
+        background-color: #ddd;
+        height: 20px;
+    }
+    
+    .Progress {
+        height: 20px;
+        background-color: #4CAF50;
+        width: 0%;
+    }
+    
+    .PercentText {
+        margin-left: 5px;
+        color: black;
     }
     #Contact{
         display: flex;
@@ -434,4 +470,11 @@ footer{
         display: block;
         justify-content: center;
     }
+    .social-icon{
+        padding-right: 35px;
+        display: flex;
+        margin: 10px 0;
+        flex-wrap: wrap;
+      }
+    
 }
