@@ -1,3 +1,4 @@
+
 @keyframes apparition {
     from {
       opacity: 0;
@@ -32,7 +33,7 @@
     list-style: none;
     width: 20px;
     height: 20px;
-    background: rgba(255, 255, 255, 0.2);
+    background: blue;
     animation: animate 25s linear infinite;
     bottom: -150px;
     
@@ -136,26 +137,18 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000;
+    padding: 20px;
+}
+header img {
+    height: 40px;
+    width: auto;
 }
 body{
     scroll-behavior: smooth;
-    background-color: rgb(17, 17, 17);
-}
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 5px;
-}
-#navbar img {
-    width: 30px; /* Ajustez la taille de votre logo selon vos besoins */
-    margin-right: 10px; /* Ajoutez de la marge à droite du logo pour l'éloigner des liens de navigation */
-}
-.nav-link {
-    color: white;
-    text-decoration: none;
-    font-size: 12px;
-    font-family: Noto Sans, sans-serif;
+    background-color: white;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 section {
     min-height: 100vh;
@@ -163,18 +156,32 @@ section {
 }
 #accueil{
     height: 100vh;
-    display: flex;
     font-family: Noto Sans, sans-serif;
 }
+.un{
+    margin-left: 85px;
+}
+.codey{
+    font-size: 30px; 
+    font-family: sans-serif;
+}
 .Hello{
-    margin-top: 7%;
-    margin-left: 200px;
-    color: white;
+    margin-top: 50px;
+    margin-left: 120px;
+    color: black;
+    font-size: 23px;
+    align-items: center; /* Centrer verticalement */
+}
+.Hello img {
+    height: 40px;
+    width: auto;
+    
 }
 .titre{
     padding-left: 15px;
     border-bottom: 3px solid green;
-    border-left: 3px solid white;
+    border-left: 3px solid black;
+    font-size: 50px;
 }
 #texte{
     color: green;
@@ -191,7 +198,7 @@ section {
     margin-top: 15px;
     margin-right: 30px;
     margin-left: 35px;
-    color: white;
+    color: black;
     font-size: 23px;
 }
 .Presentation-column img{
@@ -204,13 +211,14 @@ section {
     width: 150px;
     cursor: pointer; /* Change le curseur en main pour indiquer qu'il s'agit d'un bouton */
     padding: 5px;
-    color: white;
+    color: black;
     background-color: green;
 }
 #Competences {
-    height: 100vh;
+    height: auto;
     display: flex;
     font-family: Noto Sans, sans-serif;
+    justify-content: center;
 }
 .module-line-competences{
     width: 30%; /* ou la largeur désirée */
@@ -224,7 +232,7 @@ section {
     margin: auto;
 }
 .intitule{
-    color: white;
+    color: black;
     display: block; /* ou 'inline-block' si vous préférez */
     text-align: center;
     width: 100%; 
@@ -234,7 +242,7 @@ section {
     margin: 20px 0;
 }
 .Skill-Area{
-    color: white;
+    color: black;
 }
 .ProgressBar {
     width: 100%;
@@ -250,102 +258,24 @@ section {
 
 .PercentText {
     margin-left: 5px;
-    color: white;
+    color: black;
 }
 
-#Projet{
-    font-family: Noto Sans, sans-serif;
-    display: flex;
-    flex-direction: column; /* Empile les éléments les uns au-dessus des autres */
-    justify-content: center; /* Aligne horizontalement le contenu au centre */
-    align-items: center; /* Aligne verticalement le contenu au centre */
-    height: 100vh;
-}
-.module-line-projet{
-    width: 10%; /* ou la largeur désirée */
-    margin: 0 auto; /* Centrage horizontal */
-    height: 2px; /* ou la hauteur désirée pour la ligne */
-    background-color: green; /* ou la couleur désirée pour la ligne */
-    margin-bottom: 10px;
-}
-.realisation{
-    color: white;
-    font-size: 30px;
-}
-
-.list-projet{
-    height: 64vh;
-    display: flex;
-    margin-top: 100px;
-    overflow-x: auto;
-    width: 87%;
-}
-.list-projet::-webkit-scrollbar {
-    display: none; /* Cela cache la barre de défilement sur WebKit/Blink */
-}
-.projet-column{
-    display:inline-block;
-    border: 1px solid green;
-    border-radius: 2px;
-    margin-left: 10px;
-    padding: 3px;
-    text-align: center;
-    color: white;
-    width: 240px;
-    flex: 0 0 auto; /* Ne pas étirer les colonnes */
-}
-.projet-detail img{
-    height: 130px;
-    width: auto;
-}
-.visite-btn {
-    background-color: rgb(13, 61, 13);
-    border: none;
-    color: white;
-    padding: 10px 27px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 15px;
-    margin: 4px 2px;
-    cursor: pointer;
-  }
 #Contact{
     height: 40vh;
     display: flex;
     margin-bottom: 0px;
     font-family: Noto Sans, sans-serif;
+    width: 100%;
+    justify-content: center;
 }
 .Contact-column{
     display: inline-block;
     margin-left: 100px;
     margin-top: 110px;
-    color: white;
+    color: black;
 }
-/* Style de base pour le bouton */
-.arrow-button {
-    background-color: #007bff; /* Couleur de fond du bouton */
-    color: #fff; /* Couleur du texte */
-    padding: 10px 20px; /* Espacement interne du bouton */
-    border: none; /* Suppression de la bordure */
-    cursor: pointer; /* Curseur de type pointeur au survol */
-    font-size: 16px; /* Taille de police */
-    border-radius: 5px; /* Coins arrondis */
-    display: inline-block; /* Afficher en tant que bloc en ligne */
-    text-align: center; /* Centrer le texte horizontalement */
 
-
-  }
-  
-  /* Style pour la flèche à droite */
-  .arrow-button span {
-    margin-left: 10px; /* Espace entre le texte et la flèche */
-  }
-  
-.Contact-column img {
-    width: 70%;   /* Largeur relative à l'élément conteneur */
-    height: auto; /* Hauteur ajustée automatiquement pour conserver le ratio */
-}
 .Contact-column form{
     width: auto;
     padding-top: 60px;
@@ -356,6 +286,7 @@ section {
     margin-right: 60px;
     border-radius: 7px;
     text-align: center;
+    box-shadow: 0 0 30px black;
 }
 form input{
     width: 90%;
@@ -369,7 +300,7 @@ form textarea{
 footer{
     height: 20vh;
     padding-top: 20px;
-    color: white;
+    color: black;
     font-family: Noto Sans, sans-serif;
 } 
   .social-icon{
@@ -399,7 +330,7 @@ footer{
   
   .menu__link {
     font-size: 1.2rem;
-    color: #fff;
+    color: black;
     margin: 0 10px;
     display: inline-block;
     transition: 0.5s;
@@ -412,5 +343,70 @@ footer{
     opacity: 1;
   }
   
+  .dark-mode {
+    background-color: rgb(17, 17, 17);
+    color: white;
+    }
 
-  
+@media (max-width: 400px) {
+    section {
+        min-height: 70vh;
+        display: flex;
+    }
+    .Hello{
+        margin-left: 20px;
+    }
+    .un{
+        margin-top: 270px;
+        margin-left: 11px;
+    }
+    .codey{
+        font-size: 20px;
+    }
+    #texte{
+        color: green;
+        margin-left: 200px;
+        font-size: 20px;
+    }
+    .titre{
+        font-size: 25px;
+    }
+    #Presentation {
+        display: flex;
+        flex-direction: column; /* Organise les éléments enfants en colonne */
+        align-items: center; /* Centre les éléments enfants horizontalement */
+        height: auto;
+        width: auto;
+        justify-content: center;
+    }
+    .Presentation-column{
+        display:inline-block;
+        margin-top: 50px;
+        margin-right: 30px;
+        margin-left: 35px;
+        color: black;
+        font-size: 23px;
+    }
+    .Presentation-column img{
+        height: 390px;
+        width: auto;
+        margin-top: 40px;
+    }
+    #Competences{
+        height: auto;
+        justify-content: center;
+    }
+    #SkillBox{
+        margin-top: 200px;
+    }
+    #Contact{
+        height: auto;
+        display: flex;/* Organise les éléments enfants en colonne */ /* Centre les éléments enfants horizontalement */
+        justify-content: center;
+    }
+    footer {
+        width: 390px;
+        display: block;
+        justify-content: center;
+    }
+}

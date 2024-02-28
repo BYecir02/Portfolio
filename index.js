@@ -26,19 +26,3 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-//async function afficherLettreParLettre(texte, elementId, delai) {
-//    const element = document.getElementById(elementId);
-//    for (const lettre of texte) {
-//        await new Promise(resolve => setTimeout(resolve, delai));
-//        element.innerHTML += lettre;
-//    }
-//    // Ajoutez un délai avant de recommencer pour que la fin du mot soit visible un moment
-//   await new Promise(resolve => setTimeout(resolve, delai * 10));
-    // Efface le texte avant de recommencer
-//    element.innerHTML = '';
-    // Relance la fonction pour créer une boucle
-//    afficherLettreParLettre(texte, elementId, delai);
-//}
-
-// afficherLettreParLettre('Étudiant', 'texte', 500); // Modifiez 500 pour ajuster la vitesse
-

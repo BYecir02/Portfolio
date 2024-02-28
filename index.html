@@ -10,23 +10,17 @@
 </head>
 <body>
     <header>
-        <nav id="navbar">
-            <img src="moi-dark.png" alt="Logo de votre site">
-            <a href="#accueil" class="nav-link">Home</a>
-            <a href="#Presentation" class="nav-link">Presentation</a>
-            <a href="#Competences" class="nav-link">Competences</a>
-            <a href="#Projet" class="nav-link">Projet</a>
-            <a href="#Contact" class="nav-link">Contact</a>  
-        </nav>
+        <img src="moi.png" alt="accueil">
     </header>
-
     <section id="accueil">
-        <div class="Hello">
-            <h3 style="font-size: 30px; font-family: font-family: sans-serif;"> CODEY | BMY </h3>
-            <div class="titre">
-                <h1 style="font-size: 80px;"> Développeur <span style="color: rgb(83, 82, 82);">+</span> </h1>
+        <div class="Hello" style=" justify-content: center; margin-top: 50px;">
+            <div class="un">
+                <h3 class="codey"> CODEY | BMY </h3>
+                <div class="titre">
+                    <h1> Développeur <span style="color: rgb(83, 82, 82); border-radius: 80px;">+</span> </h1>
+                </div>
+                <span id="texte"> Etudiant </span>
             </div>
-            <span id="texte"> Etudiant </span>
                 <div class="area" >
                     <ul class="circles">
                             <li></li>
@@ -48,7 +42,7 @@
     <section id="Presentation">
         <div class="Presentation-column">
             <h1>Hello !</h1>
-            <p> Je suis Badirou Yecir, travailleur passionné et propriétaire de Codey. Je poursuis mes études d'informatique a JUNIA ISEN, à Lille. J'ai eu l'opportunuité de travailler sur divers projets qui ont enrichi mon expérience et ma vision du metier. Je recherche constamment de nouvelles occasions pour enrichir mes savoirs et aptitudes. Je souhaite que mon portfolio vous offre un regard sur mon expérience professionnelle et mes compétences. Je suis à votre disposition pour toute question ou pour plus d'informations à mon sujet.</p>         
+            <p> Je suis Badirou Yecir, travailleur passionné et propriétaire de Codey. Je poursuis mes études d'informatique a JUNIA ISEN, à Lille. <br><br> J'ai eu l'opportunuité de travailler sur divers projets qui ont enrichi mon expérience et ma vision du metier. Je recherche constamment de nouvelles occasions pour enrichir mes savoirs et aptitudes. Je souhaite que mon portfolio vous offre un regard sur mon expérience professionnelle et mes compétences. Je suis à votre disposition pour toute question ou pour plus d'informations à mon sujet. <br><br><br><br></p>         
             <a href="#Contact" id="smoothScrollButton" style="text-decoration: none;"><div class="triangle-button"> Me contacter </div></a>
         </div>
         <div class="Presentation-column">
@@ -84,60 +78,7 @@
     </section>
     <script src="index.js" defer></script>
 
-    <section id="Projet">
-        <div class="realisation">MES RÉALISATIONS</div> <br>
-        <p class="module-line-projet"></p>
-        <div class="list-projet">
-            <div class="projet-column">
-                <div class="projet-detail">
-                    <h1> 01 </h1>
-                    <img src="moi-dark.png" alt="Projet1">
-                    <p> Présentation </p>
-                    <a href="#accueil" class="nav-link"><button class="visite-btn">Visiter</button></a>
-                </div>
-            </div>
-            <div class="projet-column">
-                <div class="projet-detail">
-                    <h1> 02</h1>
-                    <img src="moi-dark.png" alt="Projet2">
-                    <p> Détail </p>
-                    <button class="visite-btn">Visiter</button>
-                </div>
-            </div>
-            <div class="projet-column">
-                <div class="projet-detail">
-                    <h1> 03</h1>
-                    <img src="moi-dark.png" alt="Projet3">
-                    <p> Détail </p>
-                    <button class="visite-btn">Visiter</button>
-                </div>
-            </div>
-            <div class="projet-column">
-                <div class="projet-detail">
-                    <h1> 04</h1>
-                    <img src="moi-dark.png" alt="Projet4">
-                    <p> Détail </p>
-                    <button class="visite-btn">Visiter</button>
-                </div>
-            </div>
-            <div class="projet-column">
-                <div class="projet-detail">
-                    <h1> 05</h1>
-                    <img src="moi-dark.png" alt="Projet5">
-                    <p> Détail </p>
-                    <button class="visite-btn">Visiter</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section id="Contact">
-        <div class="Contact-column">
-            <button class="arrow-button">
-                Ensemble démarrons <span>&rarr;</span>
-            </button>
-            <img src="work2.png" alt="Moi">
-        </div>
         <div class="Contact-column">   
             <form action="/submit_contact_form" method="post">
                 <label for="name"> </label><br>
@@ -166,7 +107,7 @@
         <p style="text-align: center;"> &copy; 2024 Yecir BADIROU | Tous droits réservés.</p>
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-        
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+    <script src="index.js"></script>
 </body>
 </html>
