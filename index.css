@@ -140,31 +140,51 @@ header {
     padding: 20px;
 }
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: black;
-    padding: 10px;
+    display: flex; /* Active Flexbox */
+    justify-content: space-between; /* Place le contenu aux extrémités opposées */
+    overflow: hidden;
+}
+.navbar img {
+    height: 30px;
+    width: auto;
+}
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none; /* Masquer le menu par défaut */
 }
 
-.logo img {
-    height: 40px;
-    width: auto;
+.nav-menu a {
+    color: black;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
 }
 
 .hamburger-menu {
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin-right: 70px;
+    float: right;
 }
 
-.bar {
-    width: 30px;
-    height: 3px;
-    background-color: black;
+.hamburger-menu button {
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
 }
+
+/* Style pour le menu visible */
+.show { 
+    display: block; 
+    text-align : center;
+  margin : 50px;
+  
+}
+#hamburgerBtn{
+  color: black;
+}
+
 body{
     scroll-behavior: smooth;
     background-color: white;
@@ -380,13 +400,15 @@ footer{
         min-height: 70vh;
         display: flex;
     }
-    .hamburger-menu {
-        cursor: pointer;
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        margin-right: 45px;
+    .navbar {
+        display: flex; /* Active Flexbox */
+        justify-content: space-between; /* Place le contenu aux extrémités opposées */
+        overflow: hidden;
     }
+    #hamburgerBtn{
+        color: black;
+        margin-right: 24px;
+      }
     .Hello{
         margin-left: 20px;
     }

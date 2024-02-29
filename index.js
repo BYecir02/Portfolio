@@ -26,3 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+document.getElementById('hamburgerBtn').addEventListener('click', function() {
+    var navMenu = document.getElementById('navMenu');
+    navMenu.classList.toggle('show');
+});
