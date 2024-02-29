@@ -26,7 +26,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-document.getElementById('hamburgerBtn').addEventListener('click', function() {
+document.addEventListener('DOMContentLoaded', function() {
+    var hamburgerBtn = document.getElementById('hamburgerBtn');
     var navMenu = document.getElementById('navMenu');
-    navMenu.classList.toggle('show');
+
+    hamburgerBtn.addEventListener('click', function() {
+        navMenu.classList.toggle('show');
+    });
 });

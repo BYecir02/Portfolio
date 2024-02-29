@@ -140,13 +140,17 @@ header {
     padding: 20px;
 }
 .navbar {
-    display: flex; /* Active Flexbox */
-    justify-content: space-between; /* Place le contenu aux extrémités opposées */
+    display: grid;
+    padding: 0 20px;
     overflow: hidden;
+    grid-template-columns: 1fr auto;
 }
 .navbar img {
-    height: 30px;
+    height: 50px;
     width: auto;
+}
+.logo, .hamburger-menu {
+    display: flex; /* Assure que ces éléments sont également flexibles */
 }
 .nav-menu {
     list-style-type: none;
@@ -177,9 +181,7 @@ header {
 /* Style pour le menu visible */
 .show { 
     display: block; 
-    text-align : center;
-  margin : 50px;
-  
+    text-align : right;
 }
 #hamburgerBtn{
   color: black;
@@ -400,14 +402,19 @@ footer{
         min-height: 70vh;
         display: flex;
     }
+    .navbar img {
+        height: 45px;
+        width: auto;
+    }
     .navbar {
-        display: flex; /* Active Flexbox */
-        justify-content: space-between; /* Place le contenu aux extrémités opposées */
+        display: grid;
+        padding: 0 20px;
         overflow: hidden;
+        grid-template-columns: 1fr auto;
     }
     #hamburgerBtn{
         color: black;
-        margin-right: 24px;
+        margin-right: 40px;
       }
     .Hello{
         margin-left: 20px;
@@ -540,6 +547,10 @@ footer{
     .Hello{
         margin-left: 20px;
     }
+    #hamburgerBtn{
+        color: black;
+        margin-right: 50px;
+      }
     .un{
         margin-top: 60px;
         margin-left: 100px;
